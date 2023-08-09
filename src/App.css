@@ -1,0 +1,63 @@
+.App {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+.Headers{
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.formInput{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 70px 1fr;
+  border-radius: 1rem;
+  width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255); 
+  border-radius: 1rem;
+  padding: 15px;
+  border: 2px solid #3498db;
+  animation: borderAnimation 5s infinite alternate;
+}
+.itemInput{
+  width: 100%;
+  color: rgb(18, 19, 19);
+  text-align: center;
+
+  & h1{
+      font-size: 36px;
+      font-family: "Arial", sans-serif;
+      color: #333;
+      text-align: center;
+      border: none;
+  }
+}
+.itemInput:nth-child(3){
+  height: 300px; /* Set the desired height for the scrollable content */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+@keyframes borderAnimation {
+  0% {
+      border-color: #b3f1c2;
+  }
+  100% {
+      border-color: #e7b7b1;
+  }
+}
