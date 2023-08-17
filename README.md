@@ -1,5 +1,7 @@
 # React + TypeScript + Vite
 
--- UPDATE V1
-   - API DQC342 ,PCBALOG
+# UPDATE V1
+* API DQC342 ,PCBALOG
+* Add page Detail PCB
+* Add page Detail lot code
    
