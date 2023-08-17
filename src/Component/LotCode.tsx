@@ -5,7 +5,6 @@ import { DQC892 } from '../Prop/DQC892';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { format } from 'date-fns'; 
 import TextField from '@mui/material/TextField';
-import { useBeforeUnload } from 'react-router-dom';
 
 interface APIDQC892{
   Status: boolean;
