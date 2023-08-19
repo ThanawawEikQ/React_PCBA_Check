@@ -75,6 +75,7 @@ const LotCode: React.FC = () => {
                   <th>TRANS_NO</th>
                   <th>MO_SN</th>
                   <th>SITE_CODE</th>
+                  <th>LOT_CD</th>
                   <th>LINE_NO</th>
                   <th>ASSY_PN</th>
                   <th>DA</th>
@@ -91,6 +92,7 @@ const LotCode: React.FC = () => {
                         <td>{item.TRANS_NO}</td>
                         <td>{item.MO_SN}</td>
                         <td>{item.SITE_CODE}</td>
+                        <td>{item.LOT_CD}</td>
                         <td>{item.LINE_NO}</td>
                         <td>{item.ASSY_PN}</td>
                         <td>{item.DA}</td>
