@@ -13,6 +13,7 @@ export interface DQC892{
   LOT_CD: string;
   DATE_CODE: string;
   LOAD_QTY: string;
+  QTY: string;
   LOCATION: string;
   LAST_UPD: Date;
 }

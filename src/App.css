@@ -54,7 +54,7 @@
   }
 }
 .itemInput:nth-child(3){
-  height: 500px; /* Set the desired height for the scrollable content */
+  height: max-content; /* Set the desired height for the scrollable content */
   overflow-y: auto; /* Enable vertical scrolling */
 }
 .Nav{
@@ -105,7 +105,50 @@ cursor: pointer;
 transition: 0.5s;
 color:#515151;
 }
+.tbodyTable {
+  width: 80%;
+  overflow: auto;
+}
+.tbodyTable thead tr th,
+.tbodyTable tbody tr td
+{
+  font-size:14px;
+}
+.itemInput .btnExport{
+  margin-top: 15px;
+  padding: 5px 86px;
+  border: none;
+  color: #fef9f9;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 9px;
+  background-color:rgb(51, 21, 161);
+  transition: 0.3s;
+}
+.itemInput .btnExport:hover{
+  transform: scale(1.1,1.1);
+}
 
+
+.red{
+  color: #df0000;
+  font-weight: bold;
+}
+.normal{
+  color: #00bf30;
+  font-weight: bold;
+}
+
+
+
+@media (max-width:1200px){
+
+  .tbodyTable thead tr th,
+  .tbodyTable tbody tr td
+  {
+    font-size:10px;
+  }
+}
 
 @keyframes borderAnimation {
   0% {

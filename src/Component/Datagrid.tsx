@@ -68,6 +68,14 @@ const Datagrid: React.FC = () => {
     }
 };
 
+function  CheckStatus (Status:any): string {
+    console.log("CheckSt: ",Status);
+    if(Status !== "OK"){
+      return "red";
+    }else{
+      return "normal";
+    }
+  }
   return (
     <>
       <div className="formInput">
@@ -101,14 +109,14 @@ const Datagrid: React.FC = () => {
                 </thead>
                 <tbody>
                   {datas.map((item, index) => (
-                    <tr key={index}>
+                    <tr key={index} >
                       <td>{index + 1}</td>
                       <td>{item.SerSn}</td>
                       <td>{item.JoNo}</td>
                       <td>{item.Model}</td>
                       <td>{item.LineNo}</td>
                       <td>{item.Station}</td>
-                      <td>{item.DefItem}</td>
+                      <td ><p className={CheckStatus(item.DefItem)}>{item.DefItem}</p></td>
                       <td>{format(new Date(item.TestDttm), 'yyyy-MM-dd HH:mm:ss')}</td>
                       <td>{format(new Date(item.LastUpd), 'yyyy-MM-dd HH:mm:ss')}</td>
                       <td>{item.SummonsNumber}</td>
